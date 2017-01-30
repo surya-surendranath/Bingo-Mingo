@@ -8,7 +8,64 @@ a {
 }
 
 #index_header {
-padding:13px;
-background-color: black;
-margin: auto;
+	padding:13px;
+	background-color: black;
+	margin: auto;
 }
+#index_signinlink {
+	border:none; 
+	background:#000; 
+	color:#fff;
+    float:right;
+	margin-top: -10px;
+}
+@media only screen and (max-width:480px)
+{
+#index_signinlink {
+	border:none; 
+	background:#000; 
+	color:#fff;
+    float:right;
+	margin-top: -10px;
+	}
+}
+@media only screen and (max-width:600px)
+{
+#index_signinlink {
+	border:none; 
+	background:#000; 
+	color:#fff;
+    float:right;
+	margin-top: -10px;
+	}
+}
+#index_registerlink {
+	border:none; 
+	background:#000; 
+	color:#fff;
+	float:right;
+	margin-top: -10px;
+	margin-right: 80px;
+}
+@media only screen and (max-width:480px)
+{
+	#index_registerlink {
+	border:none; 
+	background:#000; 
+	color:#fff;
+	float:right;
+	margin-top: -10px;
+	margin-right: 0px;
+	}
+}
+/*@media only screen and (max-width:600px)
+{
+	#index_registerlink {
+	border:none; 
+	background:#000; 
+	color:#fff;
+	float:right;
+	margin-top: -10px;
+	margin-right: 0px;
+	}
+}*/
