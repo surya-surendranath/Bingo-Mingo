@@ -18,7 +18,14 @@ a {
 	color:#fff;
     float:right;
 	margin-top: -10px;
+
 }
+#index_signinlink:hover {
+    background-color: #4CAF50; /* Green */
+    color:orange ;
+     cursor: pointer; 
+     cursor: hand;
+    }
 @media only screen and (max-width:480px)
 {
 #index_signinlink {
@@ -47,6 +54,12 @@ a {
 	margin-top: -10px;
 	margin-right: 80px;
 }
+#index_registerlink:hover {
+	background-color: #4CAF50; /* Green */
+    color:orange ;
+	cursor: pointer; 
+	cursor: hand;
+}
 @media only screen and (max-width:480px)
 {
 	#index_registerlink {
@@ -69,3 +82,29 @@ a {
 	margin-right: 0px;
 	}
 }*/
+
+.index_block1 {
+	background-color: #4d0026;
+	width:270px;
+	height: 22px;
+	padding: 10px;
+	margin-left: 10px;
+	text-align: left;
+    text-indent: 20px;
+	font-size: 17.5px;
+	font-family: Arial;
+	color:white;
+	margin-top: 50px;
+}
+
+.index_list {
+	background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    width:290px;
+    text-align: left;
+}
