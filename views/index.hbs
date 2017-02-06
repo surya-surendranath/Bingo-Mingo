@@ -11,7 +11,7 @@
 
 </form>
 </div>
-<h1>{{title}}</h1>
+<h1>Bingo Mingo</h1>
 
 <div class="index_block1">All Categories</div><div class="index_whitespace"></div>
 
@@ -84,3 +84,19 @@
 <img class= "index_image1" src="../images/icon1.png" title="hotel icon" width="30" height="30"/> 
 
 <div class="index_title1">Restaurents</div>
+<br>
+<form method="GET" action="/">
+{{#each Restaurent}}
+<div class="index_Restaurent" >
+  
+  <br>
+
+  <img id="index_image1" src="{{Image3}}" width="200px" height="200px"></img>
+  <p id="index_subtitle">{{Title}}</p>
+  <p id="index_oldprice">{{Old_price}}</p><p id="index_dealprice">{{Deal_price}}</p>
+  <p id="index_bought">{{people_bought}}</p>
+  
+</div>
+{{/each}}
+
+</form>

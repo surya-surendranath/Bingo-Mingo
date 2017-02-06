@@ -1,6 +1,7 @@
 body {
  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #d6d6c2;
 }
 
 a {
@@ -23,8 +24,8 @@ a {
 
 }
 #index_signinlink:hover {
-    background-color: #24248f; /* Green */
-    color:orange ;
+    background-color: #a3a375; /* Green */
+    color:white; 
      cursor: pointer; 
      cursor: hand;
     }
@@ -57,8 +58,8 @@ a {
 	margin-right: 80px;
 }
 #index_registerlink:hover {
-	background-color: #24248f; /* Green */
-    color:orange ;
+	background-color: #a3a375; /* Green */
+    color:white ;
 	cursor: pointer; 
 	cursor: hand;
 }
@@ -133,7 +134,7 @@ a {
 }
 
 .index_list {
-	background-color: #24248f;
+	background-color: #732673;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -145,14 +146,16 @@ a {
 
 }
 .index_list:hover {
-	background-color: #9999e6; /* Green */
+	background-color: #c2c2a3; /* Green */
     color:white;
 	cursor: pointer; 
 	cursor: hand;
 }
 .index_whitespace {
 	background-color: white;
-    padding: 1.1px;
+    padding: 0.5px;
+    margin-left: 9px;
+    margin-right: 62px;
   
 }
 .index_block2text {
@@ -168,8 +171,8 @@ a {
 }
 
 .index_block2text:hover {
-	background-color: #e60000; /* Green */
-    color:orange ;
+background-color: #a3a375; /* Green */
+    color:white; 
 	cursor: pointer; 
 	cursor: hand;
 }
@@ -205,7 +208,7 @@ a {
    
 }
 .index_list {
-	background-color: #24248f;
+	background-color: #732673;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -263,7 +266,7 @@ a {
    
 }
 .index_list {
-	background-color: #24248f;
+	background-color: #732673;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -322,7 +325,7 @@ a {
    
 }
 .index_list {
-	background-color: #24248f;
+	background-color: #732673;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -381,7 +384,7 @@ a {
    
 }
 .index_list {
-	background-color: #24248f;
+	background-color: #732673;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -440,7 +443,7 @@ a {
    
 }
 .index_list {
-	background-color: #24248f;
+	background-color: #732673;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -474,7 +477,7 @@ a {
 	.index_block1 {
 	background-color: #4d0026;
 	width:310px;
-	height: 22px;
+	height: 23px;
 	padding: 10px;
 	margin-left: 10px;
 	text-align: left;
@@ -500,7 +503,7 @@ a {
    
 }
 .index_list {
-	background-color: #24248f;
+	background-color: #732673;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -516,7 +519,7 @@ a {
 	margin-left: 800px;
 	margin-right: 5px;
 	width:375px;
-	height: 13px;
+	height: 12px;
 	padding: 15px;
 	margin-top: -42px;
 	color:white;
@@ -537,6 +540,45 @@ a {
 .index_image1 {
 	margin-top: 300px;
 	margin-left: 5px;
+}
+.index_Restaurent {
+	 border-style:solid;
+  width:40%;
+  background-color: #c65353;
+  padding-bottom: 100px;
+  float:left;
+  display:inline; 
+  width: 20%;
+  height:280px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  
+}
+#index_image1{
+	}
+#index_subtitle{
+	font-weight: bold;
+  color:white;
+  overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}
+#index_oldprice{
+font-weight: bold;
+  color:white;
+}
+}
+#index_dealprice{
+font-weight: bold;
+  color:white;
+}
+}
+#index_bought{
+	font-weight: bold;
+  color:white;
+}
 }
 }
 }
@@ -577,7 +619,7 @@ input[type="submit"]
     font-size:18px;
 }
 .index_list {
-	background-color: #24248f;
+	background-color: #732673;
     color: white;
     padding: 16px;
     font-size: 16px;
