@@ -1,3 +1,5 @@
+// Update with your config settings.
+
 module.exports = {
 
   development: {
@@ -6,6 +8,18 @@ module.exports = {
       filename: './dbSetup.sqlite3'
     }
   },
+  production: {
+    client: 'postgresql',
+    connection: process.env.DATABASE_URL,
+
+        pool: {
+            min: 2,
+            max: 10
+        },
+        migrations: {
+            tableName: 'knex_migrations'
+        }
+    },
  // the directory your migration files are located in
   directory: __dirname + '/migrations',
 
@@ -14,3 +28,4 @@ module.exports = {
   // doesn't already exist.
   tableName: 'migrations'
 };
+

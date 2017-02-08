@@ -12,6 +12,10 @@ router.get('/', function(req, res, next) {
 		res.render('index', { Restaurent:data });
 		console.log(data)
 	})
+	db.getAll('Topdeals',function(err,data) {
+		res.render('index', { Topdeals:data });
+		console.log(data)
+	})
   
 });
 

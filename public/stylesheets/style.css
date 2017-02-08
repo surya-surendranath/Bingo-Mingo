@@ -529,7 +529,7 @@ background-color: #a3a375; /* Green */
     border-top-left-radius: 5%10px;   
 }
 .index_title1 {
-	margin-top: -25px;
+	margin-top: -30px;
 	margin-left: 40px;
 	font-family: Verdana;
 	font-size: 13px;
@@ -538,7 +538,7 @@ background-color: #a3a375; /* Green */
 	font-weight: 10px;
 }
 .index_image1 {
-	margin-top: 300px;
+	margin-top: 50px;
 	margin-left: 5px;
 }
 .index_Restaurent {
@@ -554,6 +554,7 @@ background-color: #a3a375; /* Green */
   margin-bottom: 10px;
   padding-left: 10px;
   padding-top: 5px;
+ margin-top: 10px;
   
 }
 #index_image1{
@@ -579,6 +580,11 @@ font-weight: bold;
 	font-weight: bold;
   color:white;
 }
+.index_slideshow-container {
+  margin-top: 20px;
+  margin-left: 400px;
+}
+
 }
 }
 }
