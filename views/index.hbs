@@ -1,111 +1,175 @@
+
+<!-- Meta tag -->
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <div id="index_header"> 
-<form method="POST" id="index_register" action="/register">
 
-<input type="submit" id="index_registerlink" value="Register"></input>
+	<form method="POST" id="index_register" action="/register">
+		<input type="submit" id="index_registerlink" value="Register">
+		</input>
+	</form>
 
-</form>
-<form method="POST" id="index_signin" action="/signin">
+	<form method="POST" id="index_signin" action="/signin">
+		<input type="submit" id="index_signinlink" value="Sign in">
+		</input>
+	</form>
 
-<input type="submit" id="index_signinlink" value="Sign in"></input>
-
-
-</form>
 </div>
+
 <h1>Bingo Mingo</h1>
 
-<div class="index_block1">All Categories</div><div class="index_whitespace"></div>
+<div class="index_block1">All Categories
+</div>
+<div class="index_whitespace">
+</div>
+<div>
 
+	<form method="POST" action="/signin">
+		<input type="submit" class="index_list" value="Restaurent">
+		</input>
+	</form>
 
-<form method="POST" action="/signin">
+	<form method="POST" action="/signin">
+		<input type="submit" class="index_list" value="Beauty&Spa">
+		</input>
+	</form>
 
-<input type="submit" class="index_list" value="Restaurent"></input>
+	<form method="POST" action="/signin">
+		<input type="submit" class="index_list" value="Travel">
+		</input>
+	</form>
 
+	<form method="POST" action="/signin">
+		<input type="submit" class="index_list" value="Health&Fitness">
+		</input>
+	</form>
 
-</form>
+	<form method="POST" action="/signin">
+		<input type="submit" class="index_list" value="Entertainment&Activity">
+		</input>
+	</form>
+</div>
 
-
-<form method="POST" action="/signin">
-
-<input type="submit" class="index_list" value="Beauty&Spa"></input>
-
-
-</form>
-
-<form method="POST" action="/signin">
-
-<input type="submit" class="index_list" value="Travel"></input>
-
-
-</form>
-<form method="POST" action="/signin">
-
-<input type="submit" class="index_list" value="Health&Fitness"></input>
-
-
-</form>
-<form method="POST" action="/signin">
-
-<input type="submit" class="index_list" value="Entertainment&Activity"></input>
-
-
-</form>
 <div class="index_block2">
-<form method="POST" action="/signin">
 
-<input type="submit" class="index_block2text" value="HOME"></input>
-<form method="POST" action="/signin">
+	<form method="POST" action="/signin">
+		<input type="submit" class="index_block2text" value="HOME">
+		</input>
 
-<input type="submit" class="index_block2text" value="ABOUT US"></input>
+		<form method="POST" action="/signin">
+			<input type="submit" class="index_block2text" value="ABOUT US">
+			</input>
 
-<form method="POST" action="/signin">
+			<form method="POST" action="/signin">
+				<input type="submit" class="index_block2text" value="PRODUCT DEALS">
+				</input>
 
-<input type="submit" class="index_block2text" value="PRODUCT DEALS"></input>
-<form method="POST" action="/signin">
+				<form method="POST" action="/signin">
+					<input type="submit" class="index_block2text" value="HOW IT WORKS">
+					</input>
 
-<input type="submit" class="index_block2text" value="HOW IT WORKS"></input>
+				</form>
 
+			</form>
 
-</form>
+		</form>
 
-</form>
-</form>
-
-
-</form>
-
+	</form>
 
 </div>
 
 <div class="index_block3">
-<p id="index_block3text" >Customer care: 0220860987<br>&nbsp&nbsp&nbsp&nbsp&nbspMon to Fri (10.30 am-6.30 pm),Sat(10.30 am - 4.00 pm)
-</p>
+	<p id="index_block3text" >Customer care: 0220860987<br>&nbsp&nbsp&nbsp&nbsp&nbspMon to Fri (10.30 am-6.30 pm),Sat(10.30 am - 4.00 pm)
+	</p>
 </div>
+
+<p id="index_topdealtext">TRENDING DEALS</p>
+
 {{#each Topdeals}}
+
 <div class="index_slideshow-container">
 
-<div class="index_mySlides fade">
- 
-  <img src="{{Image2}}" width="500" height="240">
-  <div class="index_text">Caption Text</div>
-</div>
-</div>
-{{/each}}
-<img class= "index_image1" src="../images/icon1.png" title="hotel icon" width="30" height="30"/> 
+	<div class="index_mySlides index_fade">
+ 	 	<img src="{{Image1}}" >
+ 	    </img>
 
-<div class="index_title1">Restaurents</div>
-<br>
-<form method="GET" action="/">
+  		<div class="index_text">
+ 			 <p id="index_textp">{{Title}}</p>
+ 		</div>
+	</div>
+
+</div>
+
+{{/each}}
+
+	<div style="text-align:center">
+
+  		<span class="index_dot"></span> 
+ 		<span class="index_dot"></span> 
+  		<span class="index_dot"></span> 
+   	    <span class="index_dot"></span> 
+
+	</div>
+
+<div class="index_Alldeals">
+
+	<img class= "index_image1" src="../images/icon1.png" title="hotel icon" width="30" height="30"/> 
+
+		<div class="index_title1">Restaurents</div>
+		<br>
+			
 {{#each Restaurent}}
 <div class="index_Restaurent" >
   
   <br>
-
-  <img id="index_image1" src="{{Image3}}" width="200px" height="200px"></img>
-  <p id="index_subtitle">{{Title}}</p>
-  <p id="index_oldprice">{{Old_price}}</p><p id="index_dealprice">{{Deal_price}}</p>
-  <p id="index_bought">{{people_bought}}</p>
+ 	 <img id="index_image1" src="{{Image3}}" width="200px" height="200px">
+ 	 </img>
+  	 <p id="index_subtitle">{{Title}}</p>
+  	 <p id="index_oldprice">{{Old_price}}</p><p id="index_dealprice">{{Deal_price}}</p>
+     <p id="index_bought">{{people_bought}}</p>
   
 </div>
 {{/each}}
 
+
+<form method="POST" action="/signin">
+
+	<input type="submit" class="index_AllRetaurentPage" value="View all Restaurent deals   > ">
+	
+	</input>
 </form>
+
+<script>
+var slideIndex = 0;
+showSlides()
+
+function showSlides() 
+  {
+    var i;
+    var slides = document.getElementsByClassName("index_mySlides");
+    var dots = document.getElementsByClassName("index_dot");
+
+    	for (i = 0; i < slides.length; i++)
+    	   {
+
+     	  slides[i].style.display = "none";  
+    	   }
+
+    		slideIndex++;
+
+   		 if (slideIndex> slides.length) {slideIndex = 1}  
+
+   			 for (i = 0; i < dots.length; i++) 
+   			    {
+        			dots[i].className = dots[i].className.replace(" index_active", "");
+    			}
+    	 slides[slideIndex-1].style.display = "block"; 
+    	 dots[slideIndex-1].className += " index_active";
+    	 setTimeout(showSlides, 2000);
+
+     // Change image every 2 seconds
+  }
+</script>

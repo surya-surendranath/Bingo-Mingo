@@ -8,13 +8,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	db.getAll('Restaurent',function(err,data) {
-		res.render('index', { Restaurent:data });
+	db.getFirstEight('Restaurent',function(err,data1) {
+		db.getAll('Topdeals',function(err,data) {
+		res.render('index', { Restaurent:data1,Topdeals:data });
 		console.log(data)
+	
 	})
-	db.getAll('Topdeals',function(err,data) {
-		res.render('index', { Topdeals:data });
-		console.log(data)
 	})
   
 });

@@ -2,6 +2,7 @@ body {
  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #d6d6c2;
+
 }
 
 a {
@@ -15,23 +16,25 @@ a {
 	margin-right:-8px;
 	margin-top: -8px;
 }
+
 #index_signinlink {
 	border:none; 
 	background:#000; 
 	color:#fff;
     float:right;
 	margin-top: -10px;
-
 }
+
 #index_signinlink:hover {
     background-color: #a3a375; /* Green */
     color:white; 
-     cursor: pointer; 
-     cursor: hand;
+    cursor: pointer; 
+    cursor: hand;
     }
+
 @media only screen and (max-width:480px)
 {
-#index_signinlink {
+  #index_signinlink {
 	border:none; 
 	background:#000; 
 	color:#fff;
@@ -39,9 +42,10 @@ a {
 	margin-top: -10px;
 	}
 }
+
 @media only screen and (max-width:600px)
 {
-#index_signinlink {
+  #index_signinlink {
 	border:none; 
 	background:#000; 
 	color:#fff;
@@ -49,6 +53,7 @@ a {
 	margin-top: -10px;
 	}
 }
+
 #index_registerlink {
 	border:none; 
 	background:#000; 
@@ -57,12 +62,14 @@ a {
 	margin-top: -10px;
 	margin-right: 80px;
 }
+
 #index_registerlink:hover {
 	background-color: #a3a375; /* Green */
     color:white ;
 	cursor: pointer; 
 	cursor: hand;
 }
+
 @media only screen and (max-width:480px)
 {
 	#index_registerlink {
@@ -100,8 +107,6 @@ a {
 	margin-top: 50px;
 }
 
-
-
 .index_block2 {
 	background-color: #e60000;
 	width:500px;
@@ -116,7 +121,6 @@ a {
 	margin-top: -304px;
    
 }
-
 
 .index_block3 {
 	background-color:  black;
@@ -143,14 +147,15 @@ a {
     margin-left: 10px;
     width:290px;
     text-align: left;
-
 }
+
 .index_list:hover {
 	background-color: #c2c2a3; /* Green */
     color:white;
 	cursor: pointer; 
 	cursor: hand;
 }
+
 .index_whitespace {
 	background-color: white;
     padding: 0.5px;
@@ -158,12 +163,14 @@ a {
     margin-right: 62px;
   
 }
+
 .index_block2text {
 	margin-top: 0px;
     color:white;
     border:none; 
 	background:#e60000; 
 }
+
 #index_block3text {
 	margin-top: -10px;
     color:white;
@@ -171,12 +178,11 @@ a {
 }
 
 .index_block2text:hover {
-background-color: #a3a375; /* Green */
+	background-color: #a3a375; /* Green */
     color:white; 
 	cursor: pointer; 
 	cursor: hand;
 }
-
 
 @media only screen and (max-width:320px)
 {
@@ -238,7 +244,7 @@ background-color: #a3a375; /* Green */
 {
 	@media only screen and (min-width:321px)
 {
-	.index_block1 {
+ .index_block1 {
 	background-color: #4d0026;
 	width:300px;
 	height: 22px;
@@ -251,7 +257,7 @@ background-color: #a3a375; /* Green */
 	color:white;
 	margin-top: 100px;
 }
-.index_block2 {
+ .index_block2 {
 	background-color: #e60000;
 	width:290px;
 	height: 24px;
@@ -293,11 +299,12 @@ background-color: #a3a375; /* Green */
 }
 }
 }
+
 @media only screen and (max-width:768px)
 {
 	@media only screen and (min-width:481px)
 {
-	.index_block1 {
+  .index_block1 {
 	background-color: #4d0026;
 	width:270px;
 	height: 22px;
@@ -310,7 +317,8 @@ background-color: #a3a375; /* Green */
 	color:white;
 	margin-top: 100px;
 }
-.index_block2 {
+
+  .index_block2 {
 	background-color: #e60000;
 	width:450px;
 	height: 24px;
@@ -322,7 +330,6 @@ background-color: #a3a375; /* Green */
 	font-family: Arial;
 	color:white;
 	margin-top: -357px;
-   
 }
 .index_list {
 	background-color: #732673;
@@ -334,8 +341,8 @@ background-color: #a3a375; /* Green */
     margin-left: 10px;
     width:290px;
     text-align: left;
-
 }
+
 .index_block3 {
 	background-color:  black;
 	margin-left: 440px;
@@ -381,8 +388,8 @@ background-color: #a3a375; /* Green */
 	font-family: Arial;
 	color:white;
 	margin-top: -357px;
-   
 }
+
 .index_list {
 	background-color: #732673;
     color: white;
@@ -393,8 +400,8 @@ background-color: #a3a375; /* Green */
     margin-left: 10px;
     width:290px;
     text-align: left;
-
 }
+
 .index_block3 {
 	background-color:  black;
 	margin-left: 470px;
@@ -415,7 +422,7 @@ background-color: #a3a375; /* Green */
 {
 	@media only screen and (min-width:801px)
 {
-	.index_block1 {
+ .index_block1 {
 	background-color: #4d0026;
 	width:270px;
 	height: 22px;
@@ -468,13 +475,21 @@ background-color: #a3a375; /* Green */
 	border-bottom-left-radius: 5%10px;
     border-top-left-radius: 5%10px;   
 }
+
+.index_slideshow-container {
+ 	margin-top: -10px;
+  	margin-left: 300px;
+  	position: absolute;
+}
+
 }
 }
+
 @media only screen and (max-width:1280px)
 {
 	@media only screen and (min-width:981px)
 {
-	.index_block1 {
+ .index_block1 {
 	background-color: #4d0026;
 	width:310px;
 	height: 23px;
@@ -487,6 +502,7 @@ background-color: #a3a375; /* Green */
 	color:white;
 	margin-top: 50px;
 }
+
 .index_block2 {
 	background-color: #e60000;
 	width:580px;
@@ -500,8 +516,8 @@ background-color: #a3a375; /* Green */
 	font-family: Arial;
 	color:white;
 	margin-top: -304px;
-   
 }
+
 .index_list {
 	background-color: #732673;
     color: white;
@@ -512,8 +528,8 @@ background-color: #a3a375; /* Green */
     margin-left: 10px;
     width:330px;
     text-align: left;
-
 }
+
 .index_block3 {
 	background-color:  black;
 	margin-left: 800px;
@@ -528,6 +544,7 @@ background-color: #a3a375; /* Green */
 	border-bottom-left-radius: 5%10px;
     border-top-left-radius: 5%10px;   
 }
+
 .index_title1 {
 	margin-top: -30px;
 	margin-left: 40px;
@@ -537,54 +554,133 @@ background-color: #a3a375; /* Green */
 	color: #004080;
 	font-weight: 10px;
 }
+
 .index_image1 {
 	margin-top: 50px;
 	margin-left: 5px;
 }
+
 .index_Restaurent {
-	 border-style:solid;
-  width:40%;
-  background-color: #c65353;
-  padding-bottom: 100px;
-  float:left;
-  display:inline; 
-  width: 20%;
-  height:280px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
- margin-top: 10px;
-  
+	border-style:solid;
+    width:40%;
+    background-color: #c65353;
+    padding-bottom: 100px;
+    float:left;
+    display:inline; 
+    width: 20%;
+    height:280px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 10px;
 }
-#index_image1{
-	}
+
 #index_subtitle{
-	font-weight: bold;
-  color:white;
-  overflow:hidden; 
+    font-weight: bold;
+    color:white;
+    overflow:hidden; 
     white-space:nowrap; 
     text-overflow: ellipsis;
 }
+
 #index_oldprice{
-font-weight: bold;
-  color:white;
-}
-}
-#index_dealprice{
-font-weight: bold;
-  color:white;
-}
-}
-#index_bought{
-	font-weight: bold;
-  color:white;
-}
-.index_slideshow-container {
-  margin-top: 20px;
-  margin-left: 400px;
+    font-weight: bold;
+    color:white;
 }
 
+#index_dealprice{
+    font-weight: bold;
+    color:white;
+}
+
+#index_bought{
+	font-weight: bold;
+  	color:white;
+}
+
+#index_topdealtext{
+	margin-left: 400px;
+	margin-top: 10px;
+}
+
+.index_Alldeals {
+	margin-top: -60px;
+}
+
+.index_AllRetaurentPage{
+	width:1100px;
+	height:30px;
+	display: block;
+	background-color:#a3a375; 
+	margin-top: 850px;
+	/*margin-left: 70px;*/
+	text-align: center;
+	font-weight: bold;
+	padding: 3px;
+	float: center;
+	border: none;
+}
+.index_mySlides img
+{
+	height: 230px;
+}
+.index_slideshow-container {
+ 	margin-top: -10px;
+  	margin-left: 400px;
+  	position: absolute;
+
+
+}
+
+  
+#index_slideimage {
+
+}
+
+.index_dot {
+	height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 310px;
+    float:center;
+
+}
+
+#index_textp {
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.index_text {
+	width: 530px;
+}
+
+.index_active {
+    background-color: #717171;
+}
+
+.index_fade {
+    -webkit-animation-name: index_fade;
+    -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+
+@-webkit-keyframes index_fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes index_fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 }
 }
@@ -592,7 +688,7 @@ font-weight: bold;
 {
 	@media only screen and (min-width:1281px)
 {
-	.index_block1 {
+ .index_block1 {
 	background-color: #4d0026;
 	width:400px;
 	height: 28px;
@@ -605,6 +701,7 @@ font-weight: bold;
 	color:white;
 	margin-top: 70px;
 }
+
 .index_block2 {
 	background-color: #e60000;
 	width:980px;
@@ -618,7 +715,6 @@ font-weight: bold;
 	font-family: Arial;
 	color:white;
 	margin-top: -320px;
-   
 }
 input[type="submit"]
 {
