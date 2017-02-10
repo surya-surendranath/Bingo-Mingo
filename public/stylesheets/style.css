@@ -1,7 +1,7 @@
 body {
  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #d6d6c2;
+  background-color: white;
 
 }
 
@@ -546,34 +546,49 @@ a {
 }
 
 .index_title1 {
-	margin-top: -30px;
-	margin-left: 40px;
-	font-family: Verdana;
-	font-size: 13px;
-	font-weight: bold;
-	color: #004080;
-	font-weight: 10px;
+	margin-top: -25px;
+	margin-left: 70px;
 }
 
 .index_image1 {
-	margin-top: 50px;
-	margin-left: 5px;
+	margin-top: 95px;
+	margin-left: 32px;
+
 }
+.index_Restaurent img{
+	padding-left: -30px;
+	padding-top: -10px;
+
+}
+
 
 .index_Restaurent {
 	border-style:solid;
-    width:40%;
     background-color: #c65353;
     padding-bottom: 100px;
     float:left;
     display:inline; 
     width: 20%;
-    height:280px;
-    margin-left: 20px;
+    height:240px;
+    margin-left: 40px;
     margin-bottom: 10px;
     padding-left: 10px;
     padding-top: 5px;
-    margin-top: 10px;
+    margin-top: 0px;
+}
+.index_beautyspa{
+	border-style:solid;
+    background-color: #c65353;
+    padding-bottom: 100px;
+    float:left;
+    display:inline; 
+    width: 20%;
+    height:240px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 0px;
 }
 
 #index_subtitle{
@@ -609,33 +624,28 @@ a {
 }
 
 .index_AllRetaurentPage{
-	width:1100px;
+	width:1000px;
 	height:30px;
 	display: block;
-	background-color:#a3a375; 
-	margin-top: 850px;
+	background-color:grey; 
+	margin-top: 760px;
 	/*margin-left: 70px;*/
 	text-align: center;
 	font-weight: bold;
 	padding: 3px;
 	float: center;
 	border: none;
+	margin-left: 100px;
 }
 .index_mySlides img
 {
 	height: 230px;
+	width: 400px;
 }
 .index_slideshow-container {
  	margin-top: -10px;
   	margin-left: 400px;
   	position: absolute;
-
-
-}
-
-  
-#index_slideimage {
-
 }
 
 .index_dot {
@@ -646,7 +656,7 @@ a {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    margin-top: 310px;
+    margin-top: 270px;
     float:center;
 
 }
@@ -656,8 +666,17 @@ a {
     white-space:nowrap; 
     text-overflow: ellipsis;
     word-break: break-all;
+    width: 400px;
 }
+.index_image2{
+	margin-left: 40px;
+	margin-top: 30px;
 
+}
+.index_title2 {
+	margin-left: 80px;
+	margin-top: -24px;
+}
 .index_text {
 	width: 530px;
 }

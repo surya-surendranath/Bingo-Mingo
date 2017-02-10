@@ -10,12 +10,13 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 	db.getFirstEight('Restaurent',function(err,data1) {
 		db.getAll('Topdeals',function(err,data) {
-		res.render('index', { Restaurent:data1,Topdeals:data });
-		console.log(data)
+			db.getFirstEight('Beautyspa',function(err,data2) {
+				res.render('index', { Restaurent:data1,Topdeals:data ,Beautyspa:data2});
+					console.log(data)
 	
+	 })
 	})
-	})
-  
+  })
 });
 
 module.exports = router;
