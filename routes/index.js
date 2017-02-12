@@ -19,5 +19,8 @@ router.get('/', function(req, res, next) {
   })
 });
 
+router.post('/Restaurent', function(res, res, next) {
+	res.render('Restaurent',{})
+})
 module.exports = router;
 
