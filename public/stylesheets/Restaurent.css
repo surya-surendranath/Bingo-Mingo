@@ -1,7 +1,7 @@
 body {
  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: white;
+  background-color: black;
 
 }
 
@@ -490,7 +490,7 @@ body {
 	width:310px;
 	height: 23px;
 	padding: 10px;
-	margin-left: 10px;
+	margin-left: 0px;
 	text-align: left;
     text-indent: 20px;
 	font-size: 17.5px;
@@ -502,16 +502,16 @@ body {
 .Restaurent_block2 {
 	background-color: #e60000;
 	width:580px;
-	height: 14px;
+	height: 15px;
 	padding: 14px;
-	margin-left: 340px;
-	text-align: left;
-    text-indent: -10px;
+	margin-left: 320px;
+	text-align: center;
+    text-indent: -130px;
 	font-size: 18px;
 	font-weight: 3px;
 	font-family: Arial;
 	color:white;
-	margin-top: -304px;
+	margin-top: -44px;
 }
 
 .Restaurent_list {
@@ -521,7 +521,7 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 30px;
     width:330px;
     text-align: left;
 }
@@ -556,7 +556,19 @@ body {
 	padding-top: -10px;
 
 }
-
+.Restaurent_topspace{
+	margin-top: 80px;
+}
+.Restaurent_test4{
+	padding: 0;
+border: none;
+background: none;
+cursor: pointer;
+  overflow:hidden; 
+    white-space:nowrap; 
+    width: 220px;
+    text-overflow: ellipsis;
+}
 
 .Restaurent_Restaurent {
 	border-style:solid;
@@ -572,6 +584,14 @@ body {
     padding-top: 5px;
     margin-top: 0px;
 }
+.Restaurent_block2text hover {
+    background-color: #a3a375; /* Green */
+    color:white; 
+    cursor: pointer; 
+    cursor: hand;
+    }
+
+
 .Restaurent_beautyspa{
 	border-style:solid;
     background-color: #c65353;

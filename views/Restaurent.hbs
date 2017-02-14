@@ -22,5 +22,67 @@
 </div>
 <div class="Restaurent_whitespace">
 </div>
+
+<div class="Restaurent_block2">
+
+	<form method="POST" action="/signin">
+		<input type="submit" class="Restaurent_block2text" value="HOME">
+		</input>
+
+		<form method="POST" action="/signin">
+			<input type="submit" class="Restaurent_block2text" value="ABOUT US">
+			</input>
+
+			<form method="POST" action="/signin">
+				<input type="submit" class="Restaurent_block2text" value="PRODUCT DEALS">
+				</input>
+
+				<form method="POST" action="/signin">
+					<input type="submit" class="Restaurent_block2text" value="HOW IT WORKS">
+					</input>
+
+				</form>
+
+			</form>
+
+		</form>
+
+	</form>
+
+</div>
+<div class="Restaurent_block3">
+	<p id="Restaurent_block3text" >Customer care: 0220860987<br>&nbsp&nbsp&nbsp&nbsp&nbspMon to Fri (10.30 am-6.30 pm),Sat(10.30 am - 4.00 pm)
+	</p>
+</div>
+<div class="Restaurent_topspace"></div>
+
+
+			
+{{#each Allrestaurent}}
+<div class="Restaurent_Restaurent" >
+  
+  <br>
+ 	<!--  <img id="Restaurent_image1" src="{{Image3}}" width="225px" height="210px">
+ 	 </img> -->
+ 	  <form method="POST" action="/Viewdeal">
+ 		 <input type="image" src="{{Image3}}" id="Restaurent_image1" width="225px"  height="210px">
+ 		 </input>
+<!--  	  </form> -->
+
+  	<!--  <form method="POST" action="/Restaurentmainp"> -->
+  		 <input type="submit" class="Restaurent_test4" value="{{Title}}"></input>
+  		 <input type="text" name="Restaurent_id" value={{id}}></input> 
+  		 	 <input type="text" name="Restaurent_Category" value={{Category}}></input> 
+ 	 </form>
+  	 <!-- <p id="Restaurent_subtitle">{{Title}}</p> -->
+  	 <p id="Restaurent_oldprice">{{Old_price}}</p>
+  	 <p id="Restaurent_dealprice">{{Deal_price}}</p>
+     <p id="Restaurent_bought">{{people_bought}}</p>
+  
+</div>
+{{/each}}
+</input>
+</form>
+</body>
 </body>
 </html>

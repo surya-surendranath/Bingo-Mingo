@@ -1,0 +1,259 @@
+
+
+     <link rel='stylesheet' href='/stylesheets/Viewdeal.css' />
+
+<script src="/jquery/jquery-1.4.2.min.js"></script>
+  </head>
+  <body>
+<div id="Viewdeal_header"> 
+
+	<form method="POST" id="Viewdeal_register" action="/register">
+		<input type="submit" id="Viewdeal_registerlink" value="Register">
+		</input>
+	</form>
+
+	<form method="POST" id="Viewdeal_signin" action="/signin">
+		<input type="submit" id="Viewdeal_signinlink" value="Sign in">
+		</input>
+	</form>
+
+</div>
+<h1>Bingo Mingo</h1>
+
+<div class="Viewdeal_block1">All Categories
+</div>
+<div class="Viewdeal_whitespace">
+</div>
+
+<div class="Viewdeal_block2">
+
+	<form method="POST" action="/signin">
+		<input type="submit" class="Viewdeal_block2text" value="HOME">
+		</input>
+
+		<form method="POST" action="/signin">
+			<input type="submit" class="Viewdeal_block2text" value="ABOUT US">
+			</input>
+
+			<form method="POST" action="/signin">
+				<input type="submit" class="Viewdeal_block2text" value="PRODUCT DEALS">
+				</input>
+
+				<form method="POST" action="/signin">
+					<input type="submit" class="Viewdeal_block2text" value="HOW IT WORKS">
+					</input>
+
+				</form>
+
+			</form>
+
+		</form>
+
+	</form>
+
+</div>
+<div class="Viewdeal_block3">
+	<p id="Viewdeal_block3text" >Customer care: 0220860987<br>&nbsp&nbsp&nbsp&nbsp&nbspMon to Fri (10.30 am-6.30 pm),Sat(10.30 am - 4.00 pm)
+	</p>
+</div>
+
+
+
+<!-- <div class="Viewdeal_slideshow-container">
+
+	<div class="Viewdeal_mySlides">
+ 	 	<img id="Viewdeal_slideimage" src="{{Image1}}" >
+ 	    </img>
+	</div>
+	<div class="Viewdeal_mySlides ">
+ 	 	<img id="Viewdeal_slideimage" src="{{Image2}}" >
+ 	    </img>
+
+	</div>
+	<div class="Viewdeal_mySlides">
+ 	 	<img id="Viewdeal_slideimage" src="{{Image3}}" >
+ 	    </img>
+	</div>
+	   
+
+</div> -->
+
+
+<!-- <div style="text-align:center" visibility="hidden">
+
+  		<span class="Viewdeal_dot"></span> 
+ 		<span class="Viewdeal_dot"></span> 
+  		<span class="Viewdeal_dot"></span> 
+   	    <span class="Viewdeal_dot"></span> 
+
+	</div> -->
+<center>
+<div id="Restaurent_container">
+	<ul>
+      	<li><img src="{{Image1}}" width="454" height="254" /></li>
+            <li><img src="{{Image2}}" width="454" height="254" /></li>
+            <li><img src="{{Image3}}" width="454" height="254" /></li>
+            <li><img src="{{Image4}}" width="454" height="254" /></li>
+            
+      </ul>
+      <span class="button prevButton"></span>
+      <span class="button nextButton"></span>
+</div>
+<span class="button prevButton"></span>
+      <span class="button nextButton"></span>
+</div>
+</center>
+
+
+<script>
+$(window).load(function(){
+		var pages = $('#Restaurent_container li'), current=0;
+		var currentPage,nextPage;
+		var timeoutID;
+		var buttonClicked=0;
+
+		var handler1=function(){
+			buttonClicked=1;
+		
+			$('#Restaurent_container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if($(this).hasClass('prevButton'))
+			{
+				if (current <= 0){
+					current=pages.length-1;
+					
+				}
+
+				else
+					current=current-1;
+				nextPage = pages.eq(current);	
+
+				nextPage.css("marginLeft",0);
+				nextPage.show();
+				nextPage.animate({  marginLeft:0 }, 800,function(){
+					currentPage.hide();
+					
+				});
+				currentPage.animate({ marginLeft:400 }, 800,function(){
+					
+					$('#Restaurent_container .button').bind('click',handler1);
+				});
+
+			}
+			else
+			{
+
+				if (current >= pages.length-1)
+					current=0;
+				else
+					current=current+1;
+				nextPage = pages.eq(current);	
+
+				nextPage.css("marginLeft",404);
+				nextPage.show();
+				nextPage.animate({ marginLeft: 0 }, 800,function(){
+				});
+				currentPage.animate({ marginLeft: 0 }, 800,function(){
+					currentPage.hide();
+					$('#Restaurent_container .button').bind('click',handler1);
+
+				});
+
+			}		
+		}
+
+		var handler2=function(){
+			if (buttonClicked==0)
+			{
+			$('#Restaurent_container .button').unbind('click');
+			currentPage= pages.eq(current);
+			
+			
+		if (current >= pages.length-1){
+
+
+			current=current-3;
+			currentPage.animate({ marginLeft: 0 }, 800,function(){
+				currentPage.hide();
+				$('#Restaurent_container .button').bind('click',handler1);
+			});
+			nextPage = pages.eq(current);	
+			nextPage.css("marginLeft",0);
+			nextPage.show();
+			nextPage.animate({ marginLeft: 404}, 800,function(){
+			});
+
+
+			// nextPage = pages.eq(current);	
+			// nextPage.css("marginLeft",404);
+			// nextPage.show();
+			// nextPage.animate({ marginLeft: 0}, 800,function(){
+			// });	
+			
+		}
+			else
+			
+				current=current+1;
+
+			nextPage = pages.eq(current);	
+			nextPage.css("marginLeft",404);
+			nextPage.show();
+			nextPage.animate({ marginLeft: 0}, 800,function(){
+			});
+			currentPage.animate({ marginLeft: 0 }, 800,function(){
+				currentPage.hide();
+				$('#Restaurent_container .button').bind('click',handler1);
+			});
+
+			timeoutID=setTimeout(function(){
+				handler2();	
+
+			}, 4000);
+			}
+		}
+
+		$('#Restaurent_container .button').click(function(){
+			clearTimeout(timeoutID);
+			handler1();
+		});
+
+		timeoutID=setTimeout(function(){
+			handler2();	
+			}, 3000);
+		
+});
+
+
+</script>
+<!-- var slideViewdeal = 0;
+showSlides()
+
+function showSlides() 
+  {
+    var i;
+    var slides = document.getElementsByClassName("Viewdeal_mySlides");
+    var dots = document.getElementsByClassName("Viewdeal_dot");
+
+    	for (i = 0; i < slides.length; i++)
+    	   {
+
+     	  slides[i].style.display = "none";  
+    	   }
+
+    		slideViewdeal++;
+
+   		 if (slideViewdeal> slides.length) {slideViewdeal = 1}  
+
+   			 for (i = 0; i < dots.length; i++) 
+   			    {
+        			dots[i].className = dots[i].className.replace(" Viewdeal_active", "");
+    			}
+    	 slides[slideViewdeal-1].style.display = "block"; 
+    	 dots[slideViewdeal-1].className += " Viewdeal_active";
+    	 setTimeout(showSlides, 2000);
+
+     // Change image every 2 seconds
+  }
+
+
+ -->
