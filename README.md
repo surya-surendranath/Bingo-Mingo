@@ -1,2 +1,3 @@
 # Bingo-Mingo
-![img_20170216_212210](https://cloud.githubusercontent.com/assets/13374215/23013208/9608ee3e-f48e-11e6-950a-8b39f098f440.jpg)
+
+![screens](https://cloud.githubusercontent.com/assets/13374215/23013744/d32e88e4-f490-11e6-93a6-2874fe85b072.png)
