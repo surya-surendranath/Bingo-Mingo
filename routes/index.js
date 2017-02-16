@@ -33,7 +33,7 @@ router.post('/Viewdeal', function(req, res, next) {
 
 	db.findOne('Restaurent', {id:req.body.Restaurent_id,Category:req.body.Restaurent_Category}, function(err, data){
          
-		res.render('Viewdeal',{Viewdeal1:data,Image1:data.Image1,Category:data.Category,Image2:data.Image2,Image3:data.Image3,Image4:data.Image4})
+		res.render('Viewdeal',{Viewdeal1:data,Image1:data.Image1,Category:data.Category,Image2:data.Image2,Image3:data.Image3,Image4:data.Image4,Title:data.Title})
 
 		console.log(data)
 

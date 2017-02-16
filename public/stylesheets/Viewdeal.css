@@ -644,13 +644,20 @@ a {
 }
 /* testing
 */
+#Viewdeal_title{
+	margin-top: 60px;
+	margin-left: 90px;
+	margin-right: 200px;
+	font-size: 20px;
+	
+}
 #Restaurent_container{
 	width:454px;
 	height:254px;
 	position:absolute;
 	overflow: hidden;
 	margin-left: 50px;
-	margin-top: 90px;
+	margin-top: 20px;
 
 }
 
