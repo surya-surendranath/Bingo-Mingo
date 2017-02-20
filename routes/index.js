@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 		db.getAll('Topdeals',function(err,data) {
 			db.getFirstEight('Beautyspa',function(err,data2) {
 				res.render('index', { Restaurent:data1,Topdeals:data ,Beautyspa:data2});
-					console.log(req.body,"test3");
+					// console.log(req.body,"test3");
 	
 	 })
 	})
@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/Restaurent', function(req, res, next) {
-	console.log(req.body,"test2");
+	// console.log(req.body,"test2");
 	db.getAll('Restaurent',function(err,data1) {
 		res.render('Restaurent',{Allrestaurent:data1})
 		
@@ -29,13 +29,13 @@ router.post('/Restaurent', function(req, res, next) {
 });
 
 router.post('/Viewdeal', function(req, res, next) {
-	console.log(req.body,"test");
+	// console.log(req.body,"test");
 
 	db.findOne('Restaurent', {id:req.body.Restaurent_id,Category:req.body.Restaurent_Category}, function(err, data){
          
-		res.render('Viewdeal',{Viewdeal1:data,Image1:data.Image1,Category:data.Category,Image2:data.Image2,Image3:data.Image3,Image4:data.Image4,Title:data.Title})
+		res.render('Viewdeal',{Viewdeal1:data,Image1:data.Image1,Category:data.Category,Image2:data.Image2,Image3:data.Image3,Image4:data.Image4,Title:data.Title,Dealprice:data.Deal_price,Oldprice:data.Old_price})
 
-		console.log(data)
+		console.log("deal",data.Dealprice)
 
 	})
 	
