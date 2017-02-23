@@ -33,9 +33,9 @@ router.post('/Viewdeal', function(req, res, next) {
 
 	db.findOne('Restaurent', {id:req.body.Restaurent_id,Category:req.body.Restaurent_Category}, function(err, data){
          
-		res.render('Viewdeal',{Viewdeal1:data,Image1:data.Image1,Category:data.Category,Image2:data.Image2,Image3:data.Image3,Image4:data.Image4,Title:data.Title,Dealprice:data.Deal_price,Oldprice:data.Old_price})
+		res.render('Viewdeal',{Viewdeal1:data,Image1:data.Image1,Category:data.Category,Image2:data.Image2,Image3:data.Image3,Image4:data.Image4,Title:data.Title,Dealprice:data.Deal_price,Oldprice:data.Old_price,Vendor:data.Vendor,Category:data.Category,people_bought:data.people_bought,Rating:data.Rating})
 
-		console.log("deal",data.Dealprice)
+		console.log("deal",data.Vendor)
 
 	})
 	

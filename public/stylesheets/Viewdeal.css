@@ -677,16 +677,79 @@ a {
 	font-size: 20px;
 	
 }
+#Viewdeal_vendor{
+	margin-left: 560px;
+	color:black;
+	font-size: 15px;
+	margin-top: 5px;
+}
+#Viewdeal_vendor1{
+	margin-left: 650px;
+	color:black;
+	font-size: 15px;
+	margin-top: -35px;
+}
+#Viewdeal_category{
+	margin-left: 560px;
+	color:black;
+	font-size: 15px;
+	margin-top: 5px;
+}
 #Restaurent_container{
 	width:454px;
 	height:254px;
 	position:absolute;
 	overflow: hidden;
 	margin-left: 50px;
-	margin-top: -40px;
+	margin-top: -90px;
 
 }
-
+#Viewdeal_category1{
+	margin-left: 650px;
+	color:black;
+	font-size: 15px;
+	margin-top: -35px;
+}
+#Viewdeal_categorypricediv{
+	background-color: grey;
+	margin-left: 550px;
+	width: 400px;
+	height:1px;
+	margin-top: -10px;
+}
+#Viewdeal_sold {
+	margin-left: 560px;
+	color:black;
+	font-size: 15px;
+	margin-top: 10px;
+}
+#Viewdeal_sold1 {
+	margin-left: 600px;
+	color:black;
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: -35px;
+}
+#Viewdeal_soldpricediv {
+	background-color: grey;
+	margin-left: 550px;
+	width: 400px;
+	height:1px;
+	margin-top: -10px;
+}
+#Viewdeal_rating {
+	margin-left: 650px;
+	color:black;
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: -35px;
+}
+#Viewdeal_rating1 {
+	margin-left: 665px;
+	color:black;
+	font-size: 15px;
+	margin-top: -35px;
+}
 #Restaurent_container .prevButton{
 	height:120px;
 	width:61px;
